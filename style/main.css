@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color:  #162831;
     width: 1296px;
@@ -10,6 +14,8 @@ header {
     display: flex;
     justify-content: space-between ;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 nav a { 
     color: white;
@@ -27,4 +33,37 @@ nav {
     border-radius: 3px;
     border: none; 
     color: white;
+}
+.banner {
+    background-image: url(/style/img/0509c319c0421e2121719dcaf9b2af82.jfif);
+    background-size: 100% 120%;
+    background-size: cover;
+    background-position: 0px -130px;
+    height: 464px ;
+    width:1296px ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+   
+    align-items: center;
+    background-color: #98C9DC80;
+    background-blend-mode: color;
+    gap: 40px;
+    padding-top: 136px;
+
+}
+
+.banner h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.banner h1 {
+    text-align: center;
+    font-size: 64px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "El Messiri", sans-serif;
 }
