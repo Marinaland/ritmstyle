@@ -35,7 +35,7 @@ nav {
     color: white;
 }
 .banner {
-    background-image: url(/style/img/0509c319c0421e2121719dcaf9b2af82.jfif);
+    background-image: url(../style/img/0509c319c0421e2121719dcaf9b2af82.jfif);
     background-size: 100% 120%;
     background-size: cover;
     background-position: 0px -130px;
@@ -45,19 +45,32 @@ nav {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-   
     align-items: center;
     background-color: #98C9DC80;
     background-blend-mode: color;
     gap: 40px;
     padding-top: 136px;
-
 }
 
 .banner h2 {
     font-size: 24px;
     font-weight: 700;
+   
+
 }
+
+.banner h2::after {
+    content: url(../style/img/Rectangle\ 5.svg);
+    margin: 66px; 
+}
+     
+    
+
+.banner h2::before {
+    content: url(../style/img/Rectangle\ 3.svg);
+    margin: 66px;
+}
+
 .banner h1 {
     text-align: center;
     font-size: 64px;
@@ -66,4 +79,27 @@ nav {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "El Messiri", sans-serif;
+}
+
+main {
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 3 / 2; 
+        background-image: url(../style/img/main1.svg);
+    height: 540px;
+border-radius: 10px;
+background-size: cover;
+display: flex;
+align-items: end;}
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 1 / 3 / 2 / 4; }
+        .div4 { grid-area: 2 / 2 / 3 / 3; }
+        .div5 { grid-area: 2 / 3 / 3 / 4; }
 }
