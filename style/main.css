@@ -1,23 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
-    background-color:  #162831;
+    background-color: #162831;
     width: 1296px;
     margin: 0 auto;
-    
+
 }
 
 header {
 
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 50px;
 }
-nav a { 
+
+nav a {
     color: white;
     text-decoration: none;
 }
@@ -28,19 +30,20 @@ nav {
 }
 
 .add-seance {
-    padding: 9px 15px; 
+    padding: 9px 15px;
     background-color: aqua;
     border-radius: 3px;
-    border: none; 
+    border: none;
     color: white;
 }
+
 .banner {
     background-image: url(../style/img/0509c319c0421e2121719dcaf9b2af82.jfif);
     background-size: 100% 120%;
     background-size: cover;
     background-position: 0px -130px;
-    height: 464px ;
-    width:1296px ;
+    height: 464px;
+    width: 1296px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -55,16 +58,16 @@ nav {
 .banner h2 {
     font-size: 24px;
     font-weight: 700;
-   
+
 
 }
 
 .banner h2::after {
     content: url(../style/img/Rectangle\ 5.svg);
-    margin: 66px; 
+    margin: 66px;
 }
-     
-    
+
+
 
 .banner h2::before {
     content: url(../style/img/Rectangle\ 3.svg);
@@ -77,11 +80,31 @@ nav {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "El Messiri", sans-serif;
 }
 
-main {
+.title {
+    color: white;
+    justify-content: center;
+    display: flex;
+    gap: 66px;
+    font-size: 42px;
+
+}
+
+.title::before {
+    content: url(../style/img/lepestok\ 6.svg);
+}
+
+.title::after {
+    content: url(../style/img/lepestok\ 7.svg);
+}
 
     .parent {
         display: grid;
@@ -89,17 +112,80 @@ main {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 24px;
         grid-row-gap: 24px;
-        }
-        
-        .div1 { grid-area: 1 / 1 / 3 / 2; 
+    }
+
+    .items-end {
+        display: flex;
+        align-items: end;
+        padding: 30px 40px;
+        background-repeat: no-repeat;
+        font-size: 24px;
+        color: white;
+        background-size: cover;
+        border-radius: 10px;
+        text-decoration: none;
+        border: solid 5px #162831;
+    }
+
+    .items-end:hover{
+        border: solid 5px #0188be;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 3 / 2;
         background-image: url(../style/img/main1.svg);
-    height: 540px;
-border-radius: 10px;
-background-size: cover;
-display: flex;
-align-items: end;}
-        .div2 { grid-area: 1 / 2 / 2 / 3; }
-        .div3 { grid-area: 1 / 3 / 2 / 4; }
-        .div4 { grid-area: 2 / 2 / 3 / 3; }
-        .div5 { grid-area: 2 / 3 / 3 / 4; }
-}
+        height: 540px;
+        padding: 50px;
+    }
+
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+        background-image: url(../style/img/unsplash_TnOyyEtrKd0.png);
+        
+    }
+
+
+    .div3 {
+        grid-area: 1 / 3 / 2 / 4;
+        background-image: url(../style/img/unsplash_TnOyyEtrKd0.png);
+    }
+
+    .div4 {
+        grid-area: 2 / 2 / 3 / 3;
+        background-image: url(../style/img/unsplash_TnOyyEtrKd0.png);
+    }
+
+    .div5 {
+        grid-area: 2 / 3 / 3 / 4;
+        background-image: url(../style/img/unsplash_TnOyyEtrKd0.png);
+    }
+
+    #seance {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .about-item {
+        color: white;
+        display: flex;
+        gap: 84px;
+        font-size: 16px;
+    }
+
+    .about-item:nth-child(2){
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
